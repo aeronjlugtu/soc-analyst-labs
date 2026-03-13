@@ -17,6 +17,7 @@ A suspicious web request was flagged as a potential SQL injection attack. The al
 ### Step 1: Log Review
 - Reviewed web server logs to identify source and target IPs.  
 - Observed multiple HTTP requests from the same external IP with suspicious URL patterns.
+- Used VirusTotal to verify that the Source IP is malicious.
 
 ### Step 2: Payload Analysis
 - Decoded URL-encoded payloads to inspect request parameters.  
@@ -32,6 +33,7 @@ A suspicious web request was flagged as a potential SQL injection attack. The al
 - Repeated requests from the same IP indicate a possible reconnaissance or attack attempt.  
 - Payload analysis confirmed attacker intent.  
 - No compromise detected.
+- Request URL contained "%27%20OR%20%271" and "%27%20OR%20%27x%27%3d%27x"
 
 ---
 
@@ -65,10 +67,34 @@ The alert was a **false positive in terms of compromise**, but the structured in
 
 ---
 
-## 8. Screenshots
-Add your screenshots here. Upload them to a folder called `screenshots/` inside the repo. Example references:
+<h2>Screenshots Walk Through</h2>
 
-```markdown
-![Log Analysis](screenshots/log-analysis.png)
-![Payload Decoding](screenshots/payload-decoding.png)
-![HTTP Response](screenshots/http-response.png)
+<p align="center">
+Event: <br/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Select the disk:  <br/>
+<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Enter the number of passes: <br/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Confirm your selection:  <br/>
+<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Wait for process to complete (may take some time):  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Sanitization complete:  <br/>
+<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Observe the wiped disk:  <br/>
+<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
