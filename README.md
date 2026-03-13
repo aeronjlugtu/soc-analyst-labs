@@ -1,5 +1,5 @@
 
-<h1> SOC Investigation Labs</h1>
+<h1> SOC Analyst Labs</h1>
 
 <h2>Description</h2>
 </b>This repository contains Security Operations Center (SOC) investigation labs and alert triage write-ups completed as part of the SOC Level 1 learning path on TryHackMe, along with additional investigations from LetsDefend.
