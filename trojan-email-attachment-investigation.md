@@ -19,8 +19,9 @@ A suspicious email attachment was flagged as potentially malicious. Initial anal
 - Identified associated malicious IP addresses and other threat indicators.
 
 ### Step 2: Network Log Analysis
-- Correlated malicious IPs against internal network logs.  
+- Correlated malicious IP addresses identified on VirusTotal with internal network logs.
 - Checked if any internal devices had communicated with attacker infrastructure.
+- Found that an internal device with an IP 172.16.17.45 had an outbound connection to 5.135.143.133
 
 ### Step 3: Containment & Remediation
 - Identified affected device(s).  
@@ -62,4 +63,40 @@ This hands-on lab reinforced the importance of **structured SOC workflows** and 
 
 ## 7. References / Notes
 - Platform: LetsDefend  
-- Related MITRE ATT&CK Technique: [T1566 – Phishing](https://attack.mitre.org/techniques/T1566/)  
+- Related MITRE ATT&CK Technique: [T1566 – Phishing](https://attack.mitre.org/techniques/T1566/)
+
+<h2>Screenshots Walk Through</h2>
+
+<p align="center">
+Alert: SOC114 <br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45a.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+File Attachment <br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45b.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+VirusTotal Verification:  <br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45c.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Malicious IP Addresses identified on VirusTotal: <br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45e.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Identified the internal device that interacted with the malicious IP <br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45f.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Evidence of communication with Malicious IP  <br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45g.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45h.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Containment of the Internal device <br/>
+<img src="https://github.com/aeronjlugtu/screenshots/blob/main/45i.JPG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
